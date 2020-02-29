@@ -1,0 +1,138 @@
+function myKMeans = newFunc(X,Y,k)
+    %restraining the value of k to 7
+    if(k>7)
+        k=7;
+    end
+    disp('myKMeans func working with k as'+ num2str(k));
+
+    %defining colors
+    colors = ['r','g','b','y','c','m','k'];
+    video = [];
+
+    %rows,cols for later usage
+    [rowsX,colsX] = size(X);
+
+    if(colsX>3)
+        coeff = pca(X);
+        reduceMat = coeff(:,1:3);   %reduce to 3 pca features only
+        X = X*reduceMat;
+    end
+
+
+    %calculating means
+    means = []
+    indexes = randperm(rowsX,k); %k random numbers
+    for j = 1:length(indexes)
+        means = [means;X(indexes(j),:)];
+    end
+
+    maxChange = 2^-23;
+    change = 1.0;
+
+    i=0;
+    videoIteration = 1;
+    while (change>maxChange)    %the og loop
+       i=i+1;
+       dist =[];
+       purity =0;
+       cluster_purity=0;
+
+       %this loop calculates the new distance
+    %    j=0
+       for j=1:k
+           calc =[];
+           for n =1:rowsX
+               calc = [calc; norm(means(j,:)-X(n,:))];
+           end
+           dist = [dist calc];
+       end
+
+        %this loop creates clusters
+        Clust(1:rowsX,1:3,1:k) = 0;
+        % Iterarte and find points in standardized X to append to C
+        for i = 1:rowsX 
+            [v,index2] = min(dist(i,:));
+            Clust(i,:,index2) = X(i,:);
+        end
+        
+        %HERE
+
+        %copy each cluster to memory
+        j=1;
+        while j<=k
+            memory = [Clust(:,:,j) Y];
+            memory2 = [];
+            % For loop to remove zero vectors or combine two matrices
+            for n = 1:rowsX
+                if memory(n,1) == 0 && memory(n,2) == 0 && memory(n,3) == 0
+                    continue
+                else
+                    memory2 = [memory2;memory(n,:)];
+                end
+            end
+            % Count the amount of negative and positive rows
+            ones = sum(memory2(:,4) == 1);
+            minusOnes = sum(memory2(:,4) == -1);
+            % Purity calculations
+            purity = purity + max(ones,minusOnes);
+            j=j+1;
+        end
+        
+        %final purity for this i
+        purity = purity/rowsX;
+        
+        imageName = ['Count ', num2str(videoIteration),', Purity' ,num2str(purity)];
+        clf;
+        
+        % For every Cluster Assign a color and plot
+        j=1;
+        while j<=k
+            color = colors(j);
+            scatter3(Clust(:,1,j),Clust(:,2,j),Clust(:,3,j),36,color,'x') %Plot Cluster i
+            hold all
+            scatter3(means(j,1),means(j,2),means(j,3),75,'MarkerEdgeColor','k','MarkerFaceColor',color);
+            title(imageName);
+            j=j+1
+        end
+
+        %figures contains the actual figures 
+        addpath('figures')
+        
+        name = ['figures/figure',num2str(videoIteration),'.jpg']; 
+        video = [video;string(name)];
+        saveas(figure(i),name)
+
+        %Calculate new means
+        newMeans = means;       
+        means = [];
+
+        % Hold cluster in temporary place
+        for i = 1:k
+            memory = Clust(:,:,i);
+            memory = memory(any(memory,2),:);
+            means = [means;mean(memory)];
+        end
+
+        change = 0;
+        for i = 1:k
+            Di = (means(i,1)-newMeans(i,1))+(means(i,2)-newMeans(i,2))+(means(i,3)-newMeans(i,3));
+            change = change + Di;
+        end
+        videoIteration = videoIteration+1;
+    end         %og loop ends
+    
+    videoName = ['K_',num2str(k),'_F_all'];
+    videoObj = VideoWriter(videoName, 'MPEG-4');
+    videoObj.FrameRate = 5;
+    open(videoObj);
+    [img,Clust] = size(video);
+    a=1;
+    while a<=img
+      I = imread(char(video(a)));
+      writeVideo(videoObj,I);
+      a=a+1;
+    end
+    close(videoObj);
+end
+
+
