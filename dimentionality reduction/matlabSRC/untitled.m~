@@ -1,0 +1,26 @@
+
+%Read in the list of files
+D = dir('yalefaces/*');
+data_matrix = zeros(154,1600);
+
+flatten = [];
+
+%process files to matrix
+for i = 1:length(D)
+    if contains(D(i).name, 'subject')
+        baseFileName = D(i).name;
+        fullFileName = fullfile('yalefaces', D(i).name);
+        im = imread(fullFileName);
+        sml = imresize(im,[40,40]);
+        finmat(end+1,:) = sml(:);   %no preallocating for speed here
+    end
+end
+
+%preprocessing: substract mean and divide by std deviation
+
+
+m = mean(finmat);
+s = std(finmat);
+
+finmat = finmat - repmat(m,size(finmat,1),1);
+finmat = finmat ./ repmat(s,size(finmat,1),1);
