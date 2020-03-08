@@ -8,7 +8,7 @@ Created on Sun Mar  1 20:30:50 2020
 
 import numpy as np
 import pandas as pd
-import math
+import math,random
 
 
 def printRunStatistics(preds, labels):
@@ -65,7 +65,7 @@ def getMeanAndDeviation(X):
     columnMean = []
     columnDev =[]
     
-    for column in X.T[:-1]:
+    for column in X.T:
         columnMean.append(np.mean(column))
         columnDev.append(np.std(column, ddof=1))
         print(columnMean)
@@ -92,6 +92,7 @@ def getBayesianProbability(obs, mean, dev, usualP):
     i=0
     for featureVal in obs:
         p*=getGaussian(featureVal, mean[i], dev[i])
+        i+=1
         
     return p
 
@@ -103,6 +104,7 @@ if __name__ == "__main__":
     
     #2) randomize the data
     data = df.to_numpy()
+    random.seed(0)
     np.random.shuffle(data)
     print(df[:5])
     
