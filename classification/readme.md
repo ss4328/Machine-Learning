@@ -1,6 +1,6 @@
 # Assignment 4
 
-In this project, my aim is to create my own classification algorithms from scratch by using matlab. 
+In this project, my aim is to create my own classification algorithms from scratch by using python. 
 
 ## Execution
 
