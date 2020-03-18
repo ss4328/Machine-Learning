@@ -77,19 +77,3 @@ plt.scatter(transformed[0], transformed[1])
 plt.gca().grid(True, linewidth=0.7, linestyle=':')
 plt.axis([-10, 10, -10, 10])
 plt.show();
-
-
-# Find single best vector: the one with most entropy; i.e. which has the highest entropy->best eigenvalue
-#sbv = eigen_pairs[0][1]
-#sbv = (sbv.reshape((sbv.size, 1)))
-#sbv2= eigen_pairs[1][1]
-#sbv2 = (sbv.reshape((sbv2.size, 1)))
-
-# Stack the k=2 most relevant features
-#W = np.concatenate((sbv, sbv2), axis=1)
-#W = np.hstack((sbv, sbv2))
-
-#X = np.dot(sbv.T,data)
-#print(X)
-
-#plt.scatter(X[:,1], X[:,0])
