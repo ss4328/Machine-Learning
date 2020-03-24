@@ -9,7 +9,7 @@ This is a repository that I've created to track my progress in AI/Data Science r
 - [Coursework Taken](#coursework-taken)
 - [AI Programming Showcase](#ai-programming-showcase)
 	+ [Raw Python](#raw-python)
-- [Anecdotes](#anecdotes)
+- [Motivation](#motivation)
 - [Sources](#sources)
 - [Contact](#contact)
 
@@ -35,10 +35,10 @@ In this section I want to showcase my knowledge about various AI related algorit
 | Logistic Regression | Gradient descent with sigmoid - predict spam/non-spam  | Python | Spabase dataset
 | Naive Bayes | Classifying spam/non-spam | Python  | Spabase dataset
 
-## Anecdotes
+## Motivation
 I initially began my exploration into AI by taking the Machine learning class at Drexel University where I'm pursuing my undergrad degree. I was initially daunted by the mathematics of the course and felt lost in the course. I ended up doing quite bad on my first assignment but I figured I was wasting my energy on the wrong component: Matlab, in which I had no experience and frankly hated evey last bit of it. I moved to python (with Spyder IDE; choice doesn't matter though) and then everything got easier. Then I made a goal to get familiar with the linear algebra used so heavily in ML, khan academy was a huge help in this front. I started putting consistent effort, and gradually started improving to ended up with a pretty okay-ish grade in the course. Well, I also kinda-discovered this is cool stuff and I'd definitely like to learn more. 
 
-Well, philly went on lockdown due to COVID-19 and I had a bunch of time on my hands with mostly nothing to do. So, I started  the Coursera Deep learning specialization online, hoping to make the best use of my time.
+Well, philly went on lockdown due to COVID-19 and I had a bunch of time on my hands with mostly nothing to do. So, I started  the Coursera Deep learning specialization online, hoping to make the best use of my time (let's see).
 
 ## Sources
 TBA
