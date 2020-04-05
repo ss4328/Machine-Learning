@@ -40,8 +40,9 @@ I initially began my exploration into AI by taking the Machine learning class at
 
 Well, philly went on lockdown due to COVID-19 and I had a bunch of time on my hands with mostly nothing to do. So, I started  the Coursera Deep learning specialization online, hoping to make the best use of my time (let's see).
 
-## Sources
-TBA
+## Tips:
+1. Watch the coursera videos at 1.25x. I feel it's too slow.
+2. Aggregated Notes were prepared by using a Rocketbook. I highly recommend getting one.
 
 ## Contact
 - E-mail: shiv.suhane@gmail.com
