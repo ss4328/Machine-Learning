@@ -11,10 +11,11 @@ Notes for week 2
 - Computational Graphs
 - Log Reg Linear Descent
 - Logistic Regression on m observation
+- Vectorization
 
 
 ## Missing Bits
 - Derivates
-- Derivatives too
+- Derivatives part-two
 
 If you have a strong Calculus background, skip these sections.

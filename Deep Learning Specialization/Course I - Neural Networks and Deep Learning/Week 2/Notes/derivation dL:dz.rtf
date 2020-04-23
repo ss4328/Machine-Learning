@@ -1,0 +1,1294 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fnil\fcharset0 STIXGeneral-Regular;\f2\froman\fcharset0 Times-Italic;
+\f3\froman\fcharset0 TimesNewRomanPSMT;\f4\fswiss\fcharset0 Arial-BoldMT;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red255\green255\blue255;\red65\green65\blue65;
+\red34\green92\blue192;\red65\green65\blue65;\red232\green242\blue226;}
+{\*\expandedcolortbl;;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\cssrgb\c32157\c32157\c32157;
+\cssrgb\c16471\c45098\c80000;\cssrgb\c32157\c32157\c32157;\cssrgb\c92549\c95686\c90980;}
+\paperw11905\paperh16837\margl1440\margr1440\vieww12600\viewh7800\viewkind0
+\deftab720
+\pard\pardeftab720\sl480\sa200\partightenfactor0
+
+\f0\fs44 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Derivation of DL/dz
+\fs24 \cf4 \strokec4 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\fs28 \cf2 \strokec2 This is optional material that you can read after the week 2 video "Gradient descent on m examples." You don't need to know calculus in order to complete this course (or the other courses in the specialization), so this derivation is optional. This is for those who are curious about where the "dz = a - y" comes from.\cb1 \
+\cb3 This can be more fun and easier to digest if you follow along with a pencil and paper!\cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 \ul \ulc2 Derivation of\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \ulc2 \\frac\{dL\}\{dz\}\cb1 \ulnone \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 \ul \ulc2 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \ulnone \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 \ul \ulc2 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \ulnone \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 If you're curious, here is the derivation for\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\frac\{dL\}\{dz\} = a - y\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =
+\f2\i a
+\f3\i0 \uc0\u8722 
+\f2\i y
+\f0\i0\fs28 \cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 Note that in this part of the course, Andrew refers to\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\frac\{dL\}\{dz\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \'a0as\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 dz\cb1 \
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f2\i \cf2 \cb3 dz
+\f0\i0\fs28 .\cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 By the chain rule:\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\frac\{dL\}\{dz\} = \\frac\{dL\}\{da\} \\times \\frac\{da\}\{dz\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 \'d7\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 We'll do the following: 1. solve for\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\frac\{dL\}\{da\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 , then\cb1 \
+\cb3 Step 1:\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\frac\{dL\}\{da\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1 \cf2 \cb3 L = -(y \\times log(a) + (1-y) \\times log(1-a))\cb1 \
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f2\i \cf2 \cb3 L
+\f3\i0 =\uc0\u8722 (
+\f2\i y
+\f3\i0 \'d7
+\f2\i log
+\f3\i0 (
+\f2\i a
+\f3\i0 )+(1\uc0\u8722 
+\f2\i y
+\f3\i0 )\'d7
+\f2\i log
+\f3\i0 (1\uc0\u8722 
+\f2\i a
+\f3\i0 ))
+\f0\fs28 \cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{dL\}\{da\} = -y\\times \\frac\{1\}\{a\} - (1-y) \\times \\frac\{1\}\{1-a\}\\times -1\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\uc0\u8722 
+\f2\i y
+\f3\i0 \'d7\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth140\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 a
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs23\fsmilli11858 \cf2 \cb3 1
+\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth140\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth140\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 \uc0\u8722 (1\u8722 
+\f2\i y
+\f3\i0 )\'d7\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs23\fsmilli11858 \cf2 1\uc0\u8722 
+\f2\i a
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs23\fsmilli11858 \cf2 \cb3 1
+\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 \'d7\uc0\u8722 1
+\f0\fs28 \cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 We're taking the derivative with respect to a.\cb1 \
+\cb3 Remember that there is an additional\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 -1\cb1 \
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f3 \cf2 \cb3 \uc0\u8722 1
+\f0\fs28 \'a0in the last term when we take the derivative of\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 (1-a)\cb1 \
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f3 \cf2 \cb3 (1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\f0\fs28 \'a0with respect to\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 a\cb1 \
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f2\i \cf2 \cb3 a
+\f0\i0\fs28 \'a0(remember the Chain Rule).\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{dL\}\{da\} = \\frac\{-y\}\{a\} + \\frac\{1-y\}\{1-a\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth320\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 a
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs23\fsmilli11858 \cf2 \cb3 \uc0\u8722 
+\f2\i y
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth320\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth320\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 +\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs23\fsmilli11858 \cf2 1\uc0\u8722 
+\f2\i a
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs23\fsmilli11858 \cf2 \cb3 1\uc0\u8722 
+\f2\i y
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth440\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 We'll give both terms the same denominator:\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{dL\}\{da\} = \\frac\{-y \\times (1-a)\}\{a\\times(1-a)\} + \\frac\{a \\times (1-y)\}\{a\\times(1-a)\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth1120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 a
+\f3\i0 \'d7(1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs23\fsmilli11858 \cf2 \cb3 \uc0\u8722 
+\f2\i y
+\f3\i0 \'d7(1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth1120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth1120\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 +\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth940\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 a
+\f3\i0 \'d7(1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 a
+\f3\i0 \'d7(1\uc0\u8722 
+\f2\i y
+\f3\i0 )
+\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth940\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth940\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 Clean up the terms:\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{dL\}\{da\} = \\frac\{-y + ay + a - ay\}\{a(1-a)\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth1500\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 a
+\f3\i0 (1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\fs23\fsmilli11858 \cf2 \cb3 \uc0\u8722 
+\f2\i y
+\f3\i0 +
+\f2\i ay
+\f3\i0 +
+\f2\i a
+\f3\i0 \uc0\u8722 
+\f2\i ay
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth1500\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth1500\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 So now we have:\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{dL\}\{da\} = \\frac\{a - y\}\{a(1-a)\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 a
+\f3\i0 (1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 a
+\f3\i0 \uc0\u8722 
+\f2\i y
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f4\b\fs28 \cf2 \cb3 \ul \ulc2 Step 2:\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\b0\fs33\fsmilli16940 \cf2 \ulc2 \\frac\{da\}\{dz\}\cb1 \ulnone \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 \ul \ulc2 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \ulnone \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 \ul \ulc2 da
+\f3\i0\fs33\fsmilli16940 \cb1 \ulnone \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1 \cf2 \cb3 \\frac\{da\}\{dz\} = \\frac\{d\}\{dz\} \\sigma(z)\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 d
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f2\i \cf2 \cb3 \uc0\u963 
+\f3\i0 (
+\f2\i z
+\f3\i0 )
+\f0\fs28 \cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 The derivative of a sigmoid has the form:\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{d\}\{dz\}\\sigma(z) = \\sigma(z) \\times (1 - \\sigma(z))\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 d
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f2\i \cf2 \cb3 \uc0\u963 
+\f3\i0 (
+\f2\i z
+\f3\i0 )=
+\f2\i \uc0\u963 
+\f3\i0 (
+\f2\i z
+\f3\i0 )\'d7(1\uc0\u8722 
+\f2\i \uc0\u963 
+\f3\i0 (
+\f2\i z
+\f3\i0 ))
+\f0\fs28 \cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 You can look up why this derivation is of this form. For example, google "derivative of a sigmoid", and you can see the derivation in detail.\cb1 \
+\cb3 Recall that\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\sigma(z) = a\cb1 \
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f2\i \cf2 \cb3 \uc0\u963 
+\f3\i0 (
+\f2\i z
+\f3\i0 )=
+\f2\i a
+\f0\i0\fs28 , because we defined "a", the activation, as the output of the sigmoid activation function.\cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 So we can substitute into the formula to get:\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{da\}\{dz\} = a (1 - a)\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =
+\f2\i a
+\f3\i0 (1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\f0\fs28 \cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f4\b \cf2 \cb3 \ul \ulc2 Step 3:\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\b0\fs33\fsmilli16940 \cf2 \ulc2 \\frac\{dL\}\{dz\}\cb1 \ulnone \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 \ul \ulc2 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \ulnone \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 \ul \ulc2 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \ulnone \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \
+\cb3 We'll multiply step 1 and step 2 to get the result.\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{dL\}\{dz\} = \\frac\{dL\}\{da\} \\times \\frac\{da\}\{dz\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 \'d7\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 From step 1:\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\frac\{dL\}\{da\} = \\frac\{a - y\}\{a(1-a)\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 a
+\f3\i0 (1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 a
+\f3\i0 \uc0\u8722 
+\f2\i y
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 From step 2:\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\frac\{da\}\{dz\} = a (1 - a)\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 da
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth260\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =
+\f2\i a
+\f3\i0 (1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\f0\fs28 \cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{dL\}\{dz\} = \\frac\{a - y\}\{a(1-a)\} \\times a (1 - a)\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 a
+\f3\i0 (1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 a
+\f3\i0 \uc0\u8722 
+\f2\i y
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth740\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 \'d7
+\f2\i a
+\f3\i0 (1\uc0\u8722 
+\f2\i a
+\f3\i0 )
+\f0\fs28 \cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 Notice that we can cancel factors to get this:\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 \\frac\{dL\}\{dz\} = a - y\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+\cf2 \cb3 =
+\f2\i a
+\f3\i0 \uc0\u8722 
+\f2\i y
+\f0\i0\fs28 \cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 In Andrew's notation, he's referring to\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \\frac\{dL\}\{dz\}\cb1 \
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clvertalb \clshdrawnil \clwWidth40\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dz
+\f3\i0\fs33\fsmilli16940 \cb1 \
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+\cf2 \
+\pard\intbl\itap1\pardeftab720\sl280\qc\partightenfactor0
+
+\f2\i\fs23\fsmilli11858 \cf2 \cb3 dL
+\f3\i0\fs33\fsmilli16940 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\sl20\qc\partightenfactor0
+
+\fs2 \cf2 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx4320
+\clmrg \clvertalb \clshdrawnil \clwWidth300\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl0 \clpadr0 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\qc\partightenfactor0
+
+\fs33\fsmilli16940 \cf2 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \'a0as\'a0\
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 dz\cb1 \
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f2\i \cf2 \cb3 dz
+\f0\i0\fs28 .\cb1 \
+\pard\pardeftab720\sl420\sa400\partightenfactor0
+\cf2 \cb3 So in the videos:\cb1 \
+\pard\pardeftab720\sl520\partightenfactor0
+
+\f1\fs33\fsmilli16940 \cf2 \cb3 dz = a - y\cb1 \
+\pard\pardeftab720\sl400\sa400\partightenfactor0
+
+\f2\i \cf2 \cb3 dz
+\f3\i0 =
+\f2\i a
+\f3\i0 \uc0\u8722 
+\f2\i y\
+\
+Credits:\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f4\i0\b\fs24 \cf5 \outl0\strokewidth0 Eddy Shyu, 
+\f0\b0 \cf6 \cb7 Staff
+\fs28 \cf2 \cb1 \outl0\strokewidth0 \strokec2 \
+}
