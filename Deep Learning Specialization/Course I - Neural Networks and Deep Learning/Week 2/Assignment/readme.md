@@ -3,12 +3,19 @@
 ## About:
 Cat/Non-cat classifier using Logistic Regression
 
+## Algorithm:
+Algorithm used: 
+[![log-reg-algo.png](https://i.postimg.cc/qqWdcQ6q/log-reg-algo.png)](https://postimg.cc/Lgk72tTF)
+
 ## Notes:
 I treaked learning rate to 0.02 as it yielded better result than the default 0.01 by coursera. If you need the rationale, see the graph drawn for the learning_rate comparison. 
 
 - You can see that 0.02 results for a lower cost. 
 - However, LR or 0.02 spikes cost up for 0-2k and 2-6k iterations by a huge number. Was this a good decision? Does it have repurcususions? 
 - Learning rate is an hyperparameter. This questions (related to hyperparameter tuning) will be addressed in depth in course 2: Hyperparameter tuning. Consider this a trailer. 
+
+Q) Did I have fun doing this?
+A) HELL YES
 
 
 
