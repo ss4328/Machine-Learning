@@ -17,8 +17,8 @@ This is a repository that I've created to track my progress in AI/Data Science r
 | Course  | Where | Timeline | Links |
 | :---: | :---: | :---: | :---: |
 | CS383 - Machine Learning | In-Person : Drexel University | Winter 2019-2020 | [Link](http://catalog.drexel.edu/search/?P=CS%20383) |
-| Neural Networks and Deep Learning - Deeplearning.ai | Online-Coursera | March 20, 2020 - Present | [Link](https://www.coursera.org/learn/neural-networks-deep-learning/) |
-| Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization - Deeplearning.ai | Online-Coursera | March 20, 2020 - Present | [Link](https://www.coursera.org/learn/deep-neural-network?specialization=deep-learning) |
+| Neural Networks and Deep Learning - Deeplearning.ai | Online-Coursera | March 20, 2020 - April 22, 2020 | [Link](https://www.coursera.org/learn/neural-networks-deep-learning/) |
+| Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization - Deeplearning.ai | Online-Coursera | May 01, 2020 - Present | [Link](https://www.coursera.org/learn/deep-neural-network?specialization=deep-learning) |
 
 
 ## AI Programming Showcase
@@ -36,7 +36,7 @@ In this section I want to showcase the accumulated information about various Mac
 | Naive Bayes | Classifying spam/non-spam | Python  | Spabase dataset
 
 ## Motivation
-I initially began my exploration into AI by taking the Machine learning class at my University where I'm pursuing my undergrad degree. In the beginning, I was somewhat daunted by the mathematics in course. I ended up doing pretty bad on my first assignment but I figured I was wasting my energy on the wrong component: Matlab. So far, I had no prior experience in Matlab and frankly hated evey last bit of it. I moved to python (with Spyder IDE; choice doesn't matter though) and then everything got easier as I've had experience working with python. Then I made myself familiar with the linear algebra used so heavily in ML; here, Khan Academy was a huge help. I then took organized notes for each encountered algorithm and frequently reviewed them (Look at agregated notes). After the course ended, I kinda-discovered this is cool stuff and I'd definitely like to learn more. 
+I initially began my exploration into AI by taking the Machine learning class at my University where I'm pursuing my undergrad degree. In the beginning, I was somewhat daunted by the mathematics in course. But, I figured I was wasting my energy on the wrong component: Matlab. So far, I had no prior experience in Matlab and frankly hated evey last bit of it. I moved to python (with Spyder IDE; choice doesn't matter though) and then everything got easier as I've had experience working with python. Then I made myself familiar with the linear algebra used so heavily in ML; here, Khan Academy was a huge help. I then took organized notes for each encountered algorithm and frequently reviewed them (Look at agregated notes). After the course ended, I kinda-discovered this is cool stuff and I'd definitely like to learn more. 
 
 Philly went on lockdown due in March due to COVID-19 and so, I had a bunch of time on my hands. So, I started  the Coursera Deep learning specialization online, hoping to make the best use of my time (let's see).
 
