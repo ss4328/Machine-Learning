@@ -1,4 +1,4 @@
-# An Open Exploration of Artificial intelligence
+# Artificial intelligence & ML 
 
 ## About
 This is a repository that I've created to track my progress in AI/Data Science related topics in order to organise and share encountered information and resources. The goal of this repo is to organize/retrieve my ML/AI work, and to share the study material for others in the same boat.
